@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  MapPin, 
   Users, 
   Compass, 
   Calendar,
@@ -13,22 +12,22 @@ import {
 export const HomePage: React.FC = () => {
   const featuredDestinations = [
     {
-      title: "Santorini, Greece",
-      image: "https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg",
+      title: "Cox's Bazar, Chittagong",
+      image: "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg",
       rating: 4.9,
       reviews: 2847,
-      category: "Island Paradise"
+      category: "Beach Paradise"
     },
     {
-      title: "Kyoto, Japan",
-      image: "https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg",
+      title: "Sylhet Tea Gardens",
+      image: "https://images.pexels.com/photos/372098/pexels-photo-372098.jpeg",
       rating: 4.8,
       reviews: 3156,
-      category: "Cultural Heritage"
+      category: "Natural Beauty"
     },
     {
-      title: "Machu Picchu, Peru",
-      image: "https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg",
+      title: "Paharpur Buddhist Monastery",
+      image: "https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg",
       rating: 4.9,
       reviews: 2534,
       category: "Historic Wonder"
@@ -55,19 +54,19 @@ export const HomePage: React.FC = () => {
 
   const testimonials = [
     {
-      name: "Sarah Mitchell",
+      name: "Fatima Rahman",
       avatar: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg",
       role: "Travel Blogger",
       content: "Wanderlust has transformed how I plan and share my travel experiences. The community is incredibly supportive!"
     },
     {
-      name: "David Chen",
+      name: "Aminul Islam",
       avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg",
       role: "Adventure Seeker",
       content: "Finding travel companions was always challenging until I discovered Wanderlust. Now I never travel alone!"
     },
     {
-      name: "Emma Thompson",
+      name: "Rashida Begum",
       avatar: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg",
       role: "Digital Nomad",
       content: "The AI recommendations are spot-on! It's like having a personal travel agent who really knows me."
@@ -80,7 +79,7 @@ export const HomePage: React.FC = () => {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg"
+            src="https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg"
             alt="Hero background"
             className="w-full h-full object-cover"
           />

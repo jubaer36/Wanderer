@@ -12,7 +12,6 @@ import {
   ArrowRight, 
   Heart 
 } from 'lucide-react';
-import { cn } from '../../utils/cn';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -102,23 +101,23 @@ export const Footer: React.FC = () => {
               <span className="text-xl font-bold text-primary-800">Wanderlust</span>
             </Link>
             <p className="text-gray-600 mb-6">
-              Connecting travelers worldwide through shared experiences and personalized adventures.
+              Connecting travelers across Bangladesh through shared experiences and personalized adventures.
             </p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin size={18} className="text-primary-600" />
-                <span className="text-gray-700">123 Traveler's Way, Journey City</span>
+                <span className="text-gray-700">123 Gulshan Avenue, Dhaka 1212</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="text-primary-600" />
-                <a href="mailto:hello@wanderlust.com" className="text-gray-700 hover:text-primary-600 transition-colors">
-                  hello@wanderlust.com
+                <a href="mailto:hello@wanderlust.com.bd" className="text-gray-700 hover:text-primary-600 transition-colors">
+                  hello@wanderlust.com.bd
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="text-primary-600" />
-                <a href="tel:+18001234567" className="text-gray-700 hover:text-primary-600 transition-colors">
-                  +1 (800) 123-4567
+                <a href="tel:+8801700000000" className="text-gray-700 hover:text-primary-600 transition-colors">
+                  +88 017-0000-0000
                 </a>
               </div>
             </div>

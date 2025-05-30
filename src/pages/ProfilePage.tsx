@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { MapPin, Calendar, Camera, Edit2, Settings, LogOut } from 'lucide-react';
+import { MapPin, Calendar, Camera, Edit2, Settings, LogOut, Clock, Star, Bookmark } from 'lucide-react';
 import { cn } from '../utils/cn';
 
 export const ProfilePage: React.FC = () => {
   const [activeTab, setActiveTab] = useState('trips');
 
   const user = {
-    name: "Alex Thompson",
-    avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg",
-    location: "London, UK",
+    name: "Rafiqul Islam",
+    avatar: "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg",
+    location: "Dhaka, Bangladesh",
     joinDate: "Member since March 2024",
     bio: "Adventure seeker and photography enthusiast. Always planning the next journey!",
     stats: {
@@ -22,16 +22,16 @@ export const ProfilePage: React.FC = () => {
   const trips = [
     {
       id: 1,
-      title: "Japan Adventure",
-      image: "https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg",
+      title: "Cox's Bazar Adventure",
+      image: "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg",
       date: "March 2024",
       duration: "2 weeks",
       status: "completed"
     },
     {
       id: 2,
-      title: "Greek Islands",
-      image: "https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg",
+      title: "Sundarbans Exploration",
+      image: "https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg",
       date: "August 2024",
       duration: "10 days",
       status: "upcoming"
@@ -41,19 +41,19 @@ export const ProfilePage: React.FC = () => {
   const reviews = [
     {
       id: 1,
-      place: "Mount Fuji Sunrise Tour",
+      place: "Ahsan Manzil Heritage Tour",
       rating: 5,
       date: "March 15, 2024",
-      content: "An incredible experience watching the sunrise from Mount Fuji...",
-      image: "https://images.pexels.com/photos/3408353/pexels-photo-3408353.jpeg"
+      content: "An incredible experience exploring the historic Pink Palace of Dhaka...",
+      image: "https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg"
     },
     {
       id: 2,
-      place: "Santorini Sunset Cruise",
+      place: "Saint Martin's Island Boat Trip",
       rating: 4,
       date: "September 5, 2023",
-      content: "Beautiful views and great service on the cruise...",
-      image: "https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg"
+      content: "Beautiful coral island views and crystal clear waters...",
+      image: "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg"
     }
   ];
 

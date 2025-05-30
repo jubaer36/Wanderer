@@ -19,7 +19,7 @@ export const MarketplacePage: React.FC = () => {
       name: "Adventure Pro Backpack",
       image: "https://images.pexels.com/photos/2447042/pexels-photo-2447042.jpeg",
       category: "gear",
-      price: 129.99,
+      price: 12999,
       rating: 4.8,
       reviews: 256,
       description: "Durable 40L backpack perfect for extended travel.",
@@ -30,7 +30,7 @@ export const MarketplacePage: React.FC = () => {
       name: "Travel Tech Organizer",
       image: "https://images.pexels.com/photos/1832959/pexels-photo-1832959.jpeg",
       category: "electronics",
-      price: 34.99,
+      price: 3499,
       rating: 4.6,
       reviews: 189,
       description: "Keep your cables and gadgets organized while traveling.",
@@ -41,7 +41,7 @@ export const MarketplacePage: React.FC = () => {
       name: "Ultralight Rain Jacket",
       image: "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg",
       category: "clothing",
-      price: 89.99,
+      price: 8999,
       rating: 4.7,
       reviews: 342,
       description: "Packable waterproof jacket for unexpected weather.",
@@ -52,7 +52,7 @@ export const MarketplacePage: React.FC = () => {
       name: "Universal Travel Adapter",
       image: "https://images.pexels.com/photos/4219862/pexels-photo-4219862.jpeg",
       category: "electronics",
-      price: 24.99,
+      price: 2499,
       rating: 4.9,
       reviews: 567,
       description: "All-in-one adapter for worldwide compatibility.",
@@ -63,7 +63,7 @@ export const MarketplacePage: React.FC = () => {
       name: "Anti-Theft Travel Wallet",
       image: "https://images.pexels.com/photos/4046316/pexels-photo-4046316.jpeg",
       category: "accessories",
-      price: 39.99,
+      price: 3999,
       rating: 4.7,
       reviews: 298,
       description: "RFID-blocking wallet with multiple compartments.",
@@ -74,7 +74,7 @@ export const MarketplacePage: React.FC = () => {
       name: "Compression Packing Cubes",
       image: "https://images.pexels.com/photos/5816934/pexels-photo-5816934.jpeg",
       category: "gear",
-      price: 29.99,
+      price: 2999,
       rating: 4.8,
       reviews: 423,
       description: "Set of 3 compression cubes for organized packing.",
@@ -167,7 +167,7 @@ export const MarketplacePage: React.FC = () => {
                   <div className="flex items-center justify-between pt-4 border-t">
                     <div className="flex items-center">
                       <Tag className="text-primary-600 mr-2" size={20} />
-                      <span className="text-xl font-bold">${product.price}</span>
+                      <span className="text-xl font-bold">৳{product.price.toLocaleString()}</span>
                     </div>
                     <button className="btn btn-primary btn-sm">
                       <ShoppingBag size={18} className="mr-2" />

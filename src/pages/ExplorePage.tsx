@@ -8,63 +8,63 @@ export const ExplorePage: React.FC = () => {
   const destinations = [
     {
       id: 1,
-      title: "Santorini, Greece",
-      image: "https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg",
+      title: "Cox's Bazar, Chittagong",
+      image: "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg",
       category: "Islands",
       rating: 4.9,
       reviews: 2847,
-      description: "Iconic white-washed buildings perched on cliffs overlooking the Aegean Sea.",
-      activities: ["Sunset Watching", "Wine Tasting", "Beach Hopping"]
+      description: "World's longest natural sea beach with golden sand and breathtaking sunsets.",
+      activities: ["Beach Hopping", "Sunset Watching", "Seafood Dining"]
     },
     {
       id: 2,
-      title: "Kyoto, Japan",
-      image: "https://images.pexels.com/photos/402028/pexels-photo-402028.jpeg",
+      title: "Sylhet Tea Gardens",
+      image: "https://images.pexels.com/photos/372098/pexels-photo-372098.jpeg",
       category: "Cultural",
       rating: 4.8,
       reviews: 3156,
-      description: "Ancient temples, traditional gardens, and authentic Japanese culture.",
-      activities: ["Temple Visits", "Tea Ceremony", "Garden Tours"]
+      description: "Rolling hills covered with lush green tea plantations and stunning natural beauty.",
+      activities: ["Tea Garden Tours", "Valley Views", "Local Culture"]
     },
     {
       id: 3,
-      title: "Machu Picchu, Peru",
-      image: "https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg",
+      title: "Paharpur Buddhist Monastery",
+      image: "https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg",
       category: "Historic",
       rating: 4.9,
       reviews: 2534,
-      description: "Ancient Incan citadel set high in the Andes Mountains.",
-      activities: ["Guided Tours", "Hiking", "Photography"]
+      description: "UNESCO World Heritage Site featuring ancient Buddhist architecture.",
+      activities: ["Guided Tours", "Historical Learning", "Photography"]
     },
     {
       id: 4,
-      title: "Banff National Park, Canada",
-      image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg",
+      title: "Sundarbans Mangrove Forest",
+      image: "https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg",
       category: "Nature",
       rating: 4.9,
       reviews: 3102,
-      description: "Stunning mountain landscapes, crystal-clear lakes, and abundant wildlife.",
-      activities: ["Hiking", "Skiing", "Wildlife Viewing"]
+      description: "World's largest mangrove forest and home to the Royal Bengal Tigers.",
+      activities: ["Wildlife Viewing", "Boat Safari", "Bird Watching"]
     },
     {
       id: 5,
-      title: "Barcelona, Spain",
-      image: "https://images.pexels.com/photos/819764/pexels-photo-819764.jpeg",
+      title: "Old Dhaka Heritage",
+      image: "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg",
       category: "Urban",
       rating: 4.7,
       reviews: 4521,
-      description: "Vibrant city known for unique architecture and rich culture.",
-      activities: ["Architecture Tours", "Food Tours", "Beach Activities"]
+      description: "Historic old city with rich Mughal architecture and vibrant culture.",
+      activities: ["Heritage Tours", "Street Food", "Cultural Sites"]
     },
     {
       id: 6,
-      title: "Maldives",
-      image: "https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg",
+      title: "Saint Martin's Island",
+      image: "https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg",
       category: "Islands",
       rating: 4.9,
       reviews: 1893,
-      description: "Paradise islands with overwater bungalows and coral reefs.",
-      activities: ["Snorkeling", "Spa", "Water Sports"]
+      description: "Bangladesh's only coral island with pristine beaches and clear blue waters.",
+      activities: ["Snorkeling", "Beach Activities", "Island Hopping"]
     }
   ];
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Users, MessageSquare, Heart, Share2, MapPin } from 'lucide-react';
+import { Search, Users, MessageSquare, Heart, Share2, MapPin, Calendar } from 'lucide-react';
 import { cn } from '../utils/cn';
 
 export const CommunityPage: React.FC = () => {
@@ -16,13 +16,13 @@ export const CommunityPage: React.FC = () => {
     {
       id: 1,
       author: {
-        name: "Sarah Mitchell",
+        name: "Fatima Rahman",
         avatar: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg",
-        location: "Travel Blogger from London"
+        location: "Travel Blogger from Dhaka"
       },
-      title: "A Week in the Japanese Alps",
-      content: "Exploring the hidden gems of Japan's mountainous region...",
-      image: "https://images.pexels.com/photos/3408353/pexels-photo-3408353.jpeg",
+      title: "A Week in the Chittagong Hill Tracts",
+      content: "Exploring the tribal culture and natural beauty of Bangladesh's highlands...",
+      image: "https://images.pexels.com/photos/372098/pexels-photo-372098.jpeg",
       likes: 234,
       comments: 45,
       shares: 12
@@ -30,13 +30,13 @@ export const CommunityPage: React.FC = () => {
     {
       id: 2,
       author: {
-        name: "David Chen",
+        name: "Aminul Islam",
         avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg",
         location: "Adventure Photographer"
       },
-      title: "Trekking the Inca Trail",
-      content: "Four days of challenging hiking led to the most rewarding view...",
-      image: "https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg",
+      title: "Boat Journey Through Sundarbans",
+      content: "Three days navigating the mangrove forests led to incredible wildlife encounters...",
+      image: "https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg",
       likes: 567,
       comments: 89,
       shares: 34
@@ -46,64 +46,64 @@ export const CommunityPage: React.FC = () => {
   const travelBuddies = [
     {
       id: 1,
-      name: "Emma Thompson",
+      name: "Rashida Begum",
       avatar: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg",
-      location: "London, UK",
-      destination: "Southeast Asia",
+      location: "Dhaka, Bangladesh",
+      destination: "Chittagong Division",
       dates: "Aug 2024",
       interests: ["Photography", "Culture", "Food"],
-      description: "Looking for travel companions for a 3-week adventure through Thailand and Vietnam."
+      description: "Looking for travel companions for a 3-week adventure through Cox's Bazar and hill tracts."
     },
     {
       id: 2,
-      name: "Michael Rodriguez",
+      name: "Mohammad Hasan",
       avatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg",
-      location: "Barcelona, Spain",
-      destination: "South America",
+      location: "Sylhet, Bangladesh",
+      destination: "Northern Bangladesh",
       dates: "Sep 2024",
       interests: ["Hiking", "Photography", "Local Experiences"],
-      description: "Planning a backpacking trip through Peru and Bolivia. Looking for like-minded adventurers!"
+      description: "Planning a journey through Rangpur and Rajshahi divisions. Looking for like-minded adventurers!"
     }
   ];
 
   const groups = [
     {
       id: 1,
-      name: "Solo Female Travelers",
+      name: "Bangladesh Solo Travelers",
       image: "https://images.pexels.com/photos/2422265/pexels-photo-2422265.jpeg",
       members: 15432,
-      description: "A supportive community for women who love to travel solo.",
-      topics: ["Safety Tips", "Destination Guides", "Meet-ups"]
+      description: "A supportive community for Bangladeshi travelers exploring their homeland.",
+      topics: ["Safety Tips", "Local Guides", "Meet-ups"]
     },
     
     {
       id: 2,
-      name: "Adventure Photographers",
+      name: "Heritage Photographers",
       image: "https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg",
       members: 8976,
-      description: "Share your travel photography and connect with fellow photographers.",
-      topics: ["Photography Tips", "Gear Reviews", "Photo Challenges"]
+      description: "Capture the beauty of Bangladesh's rich culture and natural heritage.",
+      topics: ["Photography Tips", "Cultural Sites", "Nature Photography"]
     }
   ];
 
   const events = [
     {
       id: 1,
-      title: "Travel Photography Workshop",
+      title: "Bangladesh Heritage Photography Workshop",
       image: "https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg",
       date: "July 15, 2024",
       location: "Virtual Event",
       attendees: 156,
-      description: "Learn travel photography tips from professional photographers."
+      description: "Learn to capture the essence of Bangladesh's rich cultural heritage."
     },
     {
       id: 2,
-      title: "European Travelers Meetup",
+      title: "Dhaka Travelers Meetup",
       image: "https://images.pexels.com/photos/2422483/pexels-photo-2422483.jpeg",
       date: "August 5, 2024",
-      location: "Paris, France",
+      location: "Dhaka, Bangladesh",
       attendees: 89,
-      description: "Connect with fellow travelers and share European travel experiences."
+      description: "Connect with fellow travelers and share Bangladesh travel experiences."
     }
   ];
 

@@ -83,7 +83,7 @@ export const PlannerPage: React.FC = () => {
                     <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
                     <input
                       type="text"
-                      placeholder="Enter destination"
+                      placeholder="e.g., Cox's Bazar, Sylhet, Sundarbans"
                       className="input pl-10"
                     />
                   </div>
@@ -142,9 +142,9 @@ export const PlannerPage: React.FC = () => {
                       <Wallet className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
                       <select className="input pl-10">
                         <option>Select budget range</option>
-                        <option>Budget ($)</option>
-                        <option>Moderate ($$)</option>
-                        <option>Luxury ($$$)</option>
+                        <option>Budget (৳5,000-15,000)</option>
+                        <option>Moderate (৳15,000-35,000)</option>
+                        <option>Luxury (৳35,000+)</option>
                       </select>
                     </div>
                   </div>
