@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Search, MapPin, Compass, Users, ShoppingBag, User, Shield } from 'lucide-react';
+import { Menu, X, Search, MapPin, Compass, Users, ShoppingBag, User, Shield, PanelLeftOpen } from 'lucide-react';
 import { cn } from '../../utils/cn';
 import { EmergencyNotification } from '../emergency/EmergencyNotification';
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+  onSidebarToggle?: () => void;
+}
+
+export const Header: React.FC<HeaderProps> = ({ onSidebarToggle }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
@@ -42,11 +46,25 @@ export const Header: React.FC = () => {
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <Compass size={28} className="text-primary-600" strokeWidth={2.5} />
-            <span className="text-xl font-bold text-primary-800">Wanderlust</span>
-          </Link>
+          {/* Left side with sidebar toggle and logo */}
+          <div className="flex items-center space-x-3">
+            {/* Sidebar Toggle Button */}
+            {onSidebarToggle && (
+              <button
+                onClick={onSidebarToggle}
+                className="p-2 rounded-lg hover:bg-gray-100 transition-colors lg:hidden"
+                aria-label="Toggle sidebar"
+              >
+                <PanelLeftOpen size={20} className="text-gray-700" />
+              </button>
+            )}
+            
+            {/* Logo */}
+            <Link to="/" className="flex items-center space-x-2">
+              <Compass size={28} className="text-primary-600" strokeWidth={2.5} />
+              <span className="text-xl font-bold text-primary-800">Wanderlust</span>
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
