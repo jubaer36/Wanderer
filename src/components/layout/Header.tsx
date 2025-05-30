@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Search, MapPin, Compass, Users, ShoppingBag, User } from 'lucide-react';
+import { Menu, X, Search, MapPin, Compass, Users, ShoppingBag, User, Shield } from 'lucide-react';
 import { cn } from '../../utils/cn';
+import { EmergencyNotification } from '../emergency/EmergencyNotification';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,6 +14,7 @@ export const Header: React.FC = () => {
     { name: 'Plan Trip', href: '/planner', icon: MapPin },
     { name: 'Marketplace', href: '/marketplace', icon: ShoppingBag },
     { name: 'Community', href: '/community', icon: Users },
+    { name: 'Emergency', href: '/emergency', icon: Shield },
   ];
 
   useEffect(() => {
@@ -67,6 +69,7 @@ export const Header: React.FC = () => {
 
           {/* Search and User Actions */}
           <div className="hidden md:flex items-center space-x-4">
+            <EmergencyNotification />
             <button className="p-2 rounded-full hover:bg-gray-100 transition-colors">
               <Search size={20} className="text-gray-700" />
             </button>
@@ -79,12 +82,15 @@ export const Header: React.FC = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 rounded-md text-gray-700"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="md:hidden flex items-center space-x-2">
+            <EmergencyNotification />
+            <button
+              className="p-2 rounded-md text-gray-700"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 

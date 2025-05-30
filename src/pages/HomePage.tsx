@@ -6,7 +6,9 @@ import {
   Calendar,
   Star,
   ArrowRight,
-  Search
+  Search,
+  Shield,
+  MessageCircle
 } from 'lucide-react';
 
 export const HomePage: React.FC = () => {
@@ -49,6 +51,16 @@ export const HomePage: React.FC = () => {
       icon: Calendar,
       title: "Smart Trip Planning",
       description: "Plan your perfect trip with our intelligent itinerary builder."
+    },
+    {
+      icon: Shield,
+      title: "Emergency Safety Features",
+      description: "Stay safe with disaster alerts, emergency contacts, and instant assistance."
+    },
+    {
+      icon: MessageCircle,
+      title: "AI Travel Assistant",
+      description: "Get instant help with trip planning, local info, and emergency support 24/7."
     }
   ];
 
@@ -113,6 +125,34 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
+      {/* Emergency Quick Access */}
+      <section className="py-12 bg-gradient-to-r from-red-500 to-orange-500">
+        <div className="container-custom">
+          <div className="text-center text-white">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Travel Safe, Travel Smart</h2>
+            <p className="mb-6 max-w-2xl mx-auto">
+              Your safety is our top priority. Access emergency services, disaster alerts, and AI assistance instantly.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/emergency"
+                className="btn bg-white text-red-600 hover:bg-red-50 flex items-center justify-center space-x-2"
+              >
+                <Shield size={20} />
+                <span>Emergency Center</span>
+              </Link>
+              <button
+                onClick={() => window.location.href = 'tel:999'}
+                className="btn bg-red-600 text-white hover:bg-red-700 border-2 border-white flex items-center justify-center space-x-2"
+              >
+                <span>📞</span>
+                <span>Call Emergency (999)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Destinations */}
       <section className="py-20 bg-gray-50">
         <div className="container-custom">
@@ -170,7 +210,7 @@ export const HomePage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {features.map((feature, index) => (
               <div
                 key={index}
