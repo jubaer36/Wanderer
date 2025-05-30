@@ -86,7 +86,7 @@ export const SettingsPage: React.FC = () => {
                 <h3 className="font-medium text-gray-900">Language & Region</h3>
                 <p className="text-sm text-gray-600">Change app language and region settings</p>
               </div>
-              <span className="text-primary-600">English (US)</span>
+              <span className="text-primary-600">Bengali (Bangladesh)</span>
             </div>
           </div>
         </div>

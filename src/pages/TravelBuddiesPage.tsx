@@ -5,9 +5,9 @@ export const TravelBuddiesPage: React.FC = () => {
   const travelBuddies = [
     {
       id: 1,
-      name: 'Sarah Chen',
+      name: 'Fatima Rahman',
       avatar: '👩‍🦱',
-      location: 'San Francisco, CA',
+      location: 'Dhaka, Bangladesh',
       age: 28,
       travelStyle: 'Adventure Seeker',
       commonInterests: ['Hiking', 'Photography', 'Local Cuisine'],
@@ -18,9 +18,9 @@ export const TravelBuddiesPage: React.FC = () => {
     },
     {
       id: 2,
-      name: 'Alex Rodriguez',
+      name: 'Ahmed Hassan',
       avatar: '👨‍🦳',
-      location: 'Madrid, Spain',
+      location: 'Chittagong, Bangladesh',
       age: 32,
       travelStyle: 'Culture Explorer',
       commonInterests: ['Museums', 'History', 'Architecture'],
@@ -31,9 +31,9 @@ export const TravelBuddiesPage: React.FC = () => {
     },
     {
       id: 3,
-      name: 'Priya Patel',
+      name: 'Rashida Begum',
       avatar: '👩‍💼',
-      location: 'Mumbai, India',
+      location: 'Sylhet, Bangladesh',
       age: 26,
       travelStyle: 'Budget Traveler',
       commonInterests: ['Backpacking', 'Street Food', 'Markets'],

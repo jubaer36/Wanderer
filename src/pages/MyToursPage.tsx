@@ -8,85 +8,85 @@ export const MyToursPage: React.FC = () => {
     upcoming: [
       {
         id: 1,
-        title: 'Cherry Blossom Festival Tokyo',
-        image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=300&h=200&fit=crop',
-        date: 'Apr 15-22, 2025',
+        title: 'Chittagong Hill Tracts Adventure',
+        image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop',
+        date: 'Jun 15-22, 2025',
         duration: '8 days',
         participants: 12,
         maxParticipants: 15,
-        guide: 'Hiroshi Tanaka',
-        price: '$2,850',
+        guide: 'Aminul Rahman',
+        price: '৳28,500',
         status: 'confirmed',
         rating: 4.9,
-        location: 'Tokyo, Japan',
-        highlights: ['Senso-ji Temple', 'Mount Fuji', 'Traditional Tea Ceremony']
+        location: 'Bandarban, Bangladesh',
+        highlights: ['Nilgiri Hills', 'Boga Lake', 'Tribal Culture Experience']
       },
       {
         id: 2,
-        title: 'Northern Lights Adventure',
-        image: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=300&h=200&fit=crop',
+        title: 'Sundarbans Wildlife Safari',
+        image: 'https://images.unsplash.com/photo-1574116707711-05ad3e2b5c81?w=300&h=200&fit=crop',
         date: 'Dec 10-17, 2025',
         duration: '7 days',
         participants: 8,
         maxParticipants: 10,
-        guide: 'Erik Nordström',
-        price: '$3,200',
+        guide: 'Karim Uddin',
+        price: '৳32,000',
         status: 'pending',
         rating: 4.8,
-        location: 'Reykjavik, Iceland',
-        highlights: ['Aurora Viewing', 'Blue Lagoon', 'Golden Circle Tour']
+        location: 'Khulna, Bangladesh',
+        highlights: ['Royal Bengal Tiger Spotting', 'Mangrove Forest Tour', 'Traditional Boat Safari']
       }
     ],
     completed: [
       {
         id: 3,
-        title: 'Machu Picchu Expedition',
-        image: 'https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=300&h=200&fit=crop',
+        title: 'Cox\'s Bazar Beach Holiday',
+        image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=300&h=200&fit=crop',
         date: 'Sep 5-12, 2024',
         duration: '8 days',
         participants: 14,
         maxParticipants: 15,
-        guide: 'Carlos Rodriguez',
-        price: '$2,950',
+        guide: 'Rashida Begum',
+        price: '৳29,500',
         status: 'completed',
         rating: 4.9,
-        location: 'Cusco, Peru',
-        highlights: ['Inca Trail', 'Sacred Valley', 'Local Cooking Class'],
-        review: 'Amazing experience! The guide was knowledgeable and the views were breathtaking.'
+        location: 'Cox\'s Bazar, Bangladesh',
+        highlights: ['World\'s Longest Beach', 'Inani Beach', 'Local Seafood Experience'],
+        review: 'Amazing beach experience! The guide was knowledgeable and the sunsets were breathtaking.'
       },
       {
         id: 4,
-        title: 'Safari Adventure Kenya',
-        image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=300&h=200&fit=crop',
+        title: 'Sylhet Tea Garden Tour',
+        image: 'https://images.unsplash.com/photo-1594736797933-d0708b4fe0bf?w=300&h=200&fit=crop',
         date: 'Jun 20-30, 2024',
         duration: '10 days',
         participants: 10,
         maxParticipants: 12,
-        guide: 'Samuel Kiprotich',
-        price: '$4,200',
+        guide: 'Mohammad Hasan',
+        price: '৳42,000',
         status: 'completed',
         rating: 4.7,
-        location: 'Maasai Mara, Kenya',
-        highlights: ['Big Five Viewing', 'Maasai Village Visit', 'Hot Air Balloon'],
-        review: 'Wildlife viewing was incredible. Saw all the Big Five!'
+        location: 'Sylhet, Bangladesh',
+        highlights: ['Tea Garden Walking', 'Jaflong Stone Collection', 'Ratargul Swamp Forest'],
+        review: 'Tea garden views were incredible. Perfect blend of nature and cultural experience!'
       }
     ],
     cancelled: [
       {
         id: 5,
-        title: 'Mediterranean Cruise',
-        image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=300&h=200&fit=crop',
+        title: 'Rangamati Lake Cruise',
+        image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop',
         date: 'Aug 15-25, 2024',
         duration: '10 days',
         participants: 0,
         maxParticipants: 20,
-        guide: 'Maria Gonzalez',
-        price: '$3,500',
+        guide: 'Tanvir Ahmed',
+        price: '৳35,000',
         status: 'cancelled',
         rating: 0,
-        location: 'Barcelona, Spain',
-        highlights: ['Island Hopping', 'Cultural Tours', 'Culinary Experiences'],
-        reason: 'Cancelled due to weather conditions'
+        location: 'Rangamati, Bangladesh',
+        highlights: ['Kaptai Lake Cruise', 'Tribal Culture', 'Hill Station Views'],
+        reason: 'Cancelled due to monsoon weather conditions'
       }
     ]
   };

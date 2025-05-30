@@ -8,69 +8,69 @@ export const SavedPlacesPage: React.FC = () => {
   const savedPlaces = [
     {
       id: 1,
-      name: 'Santorini, Greece',
-      image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=300&h=200&fit=crop',
-      category: 'Island Paradise',
+      name: 'Cox\'s Bazar Beach',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop',
+      category: 'Beach Paradise',
       rating: 4.8,
       saved: '2 weeks ago',
       visited: false,
-      notes: 'Perfect for sunset photos and romantic getaway',
-      tags: ['Beach', 'Romance', 'Photography']
+      notes: 'World\'s longest natural sandy beach - perfect for sunset photography',
+      tags: ['Beach', 'Sunset', 'Photography']
     },
     {
       id: 2,
-      name: 'Kyoto, Japan',
-      image: 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=300&h=200&fit=crop',
+      name: 'Somapura Mahavihara, Paharpur',
+      image: 'https://images.unsplash.com/photo-1568322445389-f64ac2515020?w=300&h=200&fit=crop',
       category: 'Cultural Heritage',
       rating: 4.9,
       saved: '1 month ago',
       visited: true,
-      notes: 'Amazing temples and traditional architecture',
-      tags: ['Culture', 'History', 'Temples']
+      notes: 'Ancient Buddhist monastery with stunning architecture',
+      tags: ['Culture', 'History', 'UNESCO']
     },
     {
       id: 3,
-      name: 'Banff National Park, Canada',
+      name: 'Chittagong Hill Tracts',
       image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=200&fit=crop',
       category: 'Natural Wonder',
       rating: 4.7,
       saved: '3 days ago',
       visited: false,
-      notes: 'Incredible hiking trails and mountain views',
+      notes: 'Incredible hiking trails and mountain views with tribal culture',
       tags: ['Nature', 'Hiking', 'Mountains']
     },
     {
       id: 4,
-      name: 'Machu Picchu, Peru',
-      image: 'https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=300&h=200&fit=crop',
+      name: 'Sixty Dome Mosque, Bagerhat',
+      image: 'https://images.unsplash.com/photo-1580418827493-c09f4d79d3c4?w=300&h=200&fit=crop',
       category: 'Historical Site',
       rating: 4.9,
       saved: '2 months ago',
       visited: true,
-      notes: 'Bucket list destination - absolutely breathtaking',
-      tags: ['History', 'Adventure', 'UNESCO']
+      notes: 'UNESCO World Heritage site - magnificent medieval Islamic architecture',
+      tags: ['History', 'Architecture', 'UNESCO']
     },
     {
       id: 5,
-      name: 'Bali, Indonesia',
-      image: 'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=300&h=200&fit=crop',
-      category: 'Tropical Paradise',
+      name: 'Sylhet Tea Gardens',
+      image: 'https://images.unsplash.com/photo-1563299796-17596ed8db98?w=300&h=200&fit=crop',
+      category: 'Scenic Beauty',
       rating: 4.6,
       saved: '1 week ago',
       visited: false,
-      notes: 'Rice terraces and beautiful beaches',
-      tags: ['Beach', 'Culture', 'Relaxation']
+      notes: 'Rolling green tea estates and serene natural beauty',
+      tags: ['Tea', 'Nature', 'Relaxation']
     },
     {
       id: 6,
-      name: 'Northern Lights, Iceland',
-      image: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=300&h=200&fit=crop',
-      category: 'Natural Phenomenon',
+      name: 'Sundarbans Mangrove Forest',
+      image: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=300&h=200&fit=crop',
+      category: 'Natural Wonder',
       rating: 4.8,
       saved: '5 days ago',
       visited: false,
-      notes: 'Best viewing time: September to March',
-      tags: ['Aurora', 'Winter', 'Photography']
+      notes: 'World\'s largest mangrove forest and home to Royal Bengal Tigers',
+      tags: ['Wildlife', 'Forest', 'UNESCO']
     }
   ];
 

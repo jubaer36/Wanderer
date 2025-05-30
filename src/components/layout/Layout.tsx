@@ -6,7 +6,7 @@ import { Sidebar } from './Sidebar';
 import { AIChatbot } from '../chatbot/AIChatbot';
 
 export const Layout: React.FC = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
@@ -15,7 +15,7 @@ export const Layout: React.FC = () => {
       <Header onSidebarToggle={toggleSidebar} />
       <div className="flex flex-1">
         <Sidebar isOpen={sidebarOpen} onToggle={toggleSidebar} />
-        <main className={`flex-1 transition-all duration-300 ${sidebarOpen ? 'lg:ml-80' : 'lg:ml-16'}`}>
+        <main className={`flex-1 transition-all duration-300 ${sidebarOpen ? 'lg:ml-64' : 'lg:ml-16'}`}>
           <Outlet />
         </main>
       </div>

@@ -138,9 +138,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
       {/* Sidebar */}
       <div
         className={cn(
-          'fixed left-0 top-16 h-[calc(100vh-4rem)] bg-white border-r border-gray-200 z-50 transition-all duration-300 overflow-hidden',
-          isOpen ? 'w-80' : 'w-16',
-          'lg:relative lg:top-0 lg:h-full'
+          'fixed left-0 top-16 h-[calc(100vh-4rem)] bg-gray-50 border-r border-gray-200 z-50 transition-all duration-300 overflow-hidden shadow-lg',
+          isOpen ? 'w-64' : 'w-16',
+          'lg:relative lg:top-0 lg:h-full lg:shadow-none'
         )}
       >
         {/* Toggle Button */}
@@ -158,17 +158,17 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
         <div className="h-full overflow-y-auto">
           {/* User Profile Section */}
           <div className={cn(
-            'p-4 border-b border-gray-100',
+            'p-3 border-b border-gray-100',
             !isOpen && 'px-2'
           )}>
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                <User size={20} className="text-primary-600" />
+              <div className="w-9 h-9 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <User size={18} className="text-primary-600" />
               </div>
               {isOpen && (
                 <div className="min-w-0 flex-1">
-                  <h3 className="font-semibold text-gray-900 truncate">John Doe</h3>
-                  <p className="text-sm text-gray-500 truncate">Adventure Seeker</p>
+                  <h3 className="font-semibold text-gray-900 truncate text-sm">John Doe</h3>
+                  <p className="text-xs text-gray-500 truncate">Adventure Seeker</p>
                 </div>
               )}
             </div>
@@ -178,11 +178,11 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
           <div className="p-2">
             {sidebarSections.map((section, sectionIndex) => (
               <div key={section.title} className={cn(
-                'mb-6',
-                sectionIndex > 0 && 'border-t border-gray-100 pt-4'
+                'mb-4',
+                sectionIndex > 0 && 'border-t border-gray-100 pt-3'
               )}>
                 {isOpen && (
-                  <h4 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3 px-2">
+                  <h4 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2 px-2">
                     {section.title}
                   </h4>
                 )}
@@ -193,7 +193,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
                       key={item.name}
                       to={item.href}
                       className={cn(
-                        'group flex items-center px-2 py-3 text-sm font-medium rounded-lg transition-all duration-200',
+                        'group flex items-center px-2 py-2.5 text-sm font-medium rounded-lg transition-all duration-200',
                         location.pathname === item.href
                           ? 'bg-primary-50 text-primary-700 border-r-2 border-primary-600'
                           : 'text-gray-700 hover:bg-gray-50 hover:text-gray-900',
@@ -267,12 +267,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
 
           {/* Footer when expanded */}
           {isOpen && (
-            <div className="border-t border-gray-100 p-4 mt-auto">
+            <div className="border-t border-gray-100 p-3 mt-auto">
               <div className="text-center">
                 <p className="text-xs text-gray-500">
                   Wanderlust v2.0
                 </p>
-                <p className="text-xs text-gray-400 mt-1">
+                <p className="text-xs text-gray-400 mt-0.5">
                   Your travel companion
                 </p>
               </div>

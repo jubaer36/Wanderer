@@ -14,21 +14,21 @@ import {
 export const HomePage: React.FC = () => {
   const featuredDestinations = [
     {
-      title: "Cox's Bazar, Chittagong",
+      title: "Cox's Bazar Beach",
       image: "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg",
       rating: 4.9,
       reviews: 2847,
       category: "Beach Paradise"
     },
     {
-      title: "Sylhet Tea Gardens",
+      title: "Sundarbans Mangrove Forest",
       image: "https://images.pexels.com/photos/372098/pexels-photo-372098.jpeg",
       rating: 4.8,
       reviews: 3156,
-      category: "Natural Beauty"
+      category: "Natural Wonder"
     },
     {
-      title: "Paharpur Buddhist Monastery",
+      title: "Somapura Mahavihara",
       image: "https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg",
       rating: 4.9,
       reviews: 2534,
@@ -91,8 +91,8 @@ export const HomePage: React.FC = () => {
       <section className="relative h-screen">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg"
-            alt="Hero background"
+            src="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg"
+            alt="Cox's Bazar Beach - World's Longest Natural Sea Beach"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-40" />
@@ -100,10 +100,10 @@ export const HomePage: React.FC = () => {
         
         <div className="relative container-custom h-full flex flex-col items-center justify-center text-center text-white">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
-            Your Journey Begins Here
+            Begin your journey to the unknown
           </h1>
           <p className="text-xl md:text-2xl mb-12 max-w-2xl animate-fade-in">
-            Connect with fellow travelers, discover unique experiences, and plan your perfect adventure.
+            Connect with fellow travelers, explore stunning destinations, and plan your perfect adventure across the land of natural beauty.
           </p>
           
           {/* Search Bar */}
@@ -113,40 +113,12 @@ export const HomePage: React.FC = () => {
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
                 <input
                   type="text"
-                  placeholder="Where do you want to go?"
+                  placeholder="Explore Cox's Bazar, Sundarbans, Sylhet..."
                   className="w-full pl-10 pr-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-primary-500"
                 />
               </div>
               <button className="btn btn-primary">
                 Start Planning
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Emergency Quick Access */}
-      <section className="py-12 bg-gradient-to-r from-red-500 to-orange-500">
-        <div className="container-custom">
-          <div className="text-center text-white">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Travel Safe, Travel Smart</h2>
-            <p className="mb-6 max-w-2xl mx-auto">
-              Your safety is our top priority. Access emergency services, disaster alerts, and AI assistance instantly.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/emergency"
-                className="btn bg-white text-red-600 hover:bg-red-50 flex items-center justify-center space-x-2"
-              >
-                <Shield size={20} />
-                <span>Emergency Center</span>
-              </Link>
-              <button
-                onClick={() => window.location.href = 'tel:999'}
-                className="btn bg-red-600 text-white hover:bg-red-700 border-2 border-white flex items-center justify-center space-x-2"
-              >
-                <span>📞</span>
-                <span>Call Emergency (999)</span>
               </button>
             </div>
           </div>
