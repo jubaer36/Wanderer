@@ -41,7 +41,7 @@ export const PlannerPage: React.FC = () => {
 
   const simulateAiGeneration = () => {
     setIsAiGenerating(true);
-    setCurrentStep(5);
+    setAiGenerationProgress(0);
     
     // Simulate AI progress
     const progressSteps = [20, 40, 60, 80, 100];
@@ -568,7 +568,7 @@ export const PlannerPage: React.FC = () => {
             </div>
           )}
 
-          {currentStep === 4 && isAiGenerating && (
+          {currentStep === 5 && isAiGenerating && (
             <div className="space-y-6 text-center py-12">
               <div className="flex justify-center">
                 <Loader className="animate-spin text-primary-600" size={48} />
@@ -591,7 +591,7 @@ export const PlannerPage: React.FC = () => {
             </div>
           )}
 
-          {currentStep === 4 && showGeneratedPlan && generatedPlan && (
+          {currentStep === 5 && showGeneratedPlan && generatedPlan && (
             <div className="space-y-8">
               <div className="flex justify-between items-center">
                 <h2 className="text-2xl font-bold">Your AI-Generated Travel Plan</h2>
@@ -805,22 +805,23 @@ export const PlannerPage: React.FC = () => {
             <button
               onClick={() => setCurrentStep(prev => Math.max(1, prev - 1))}
               className="btn btn-outline"
-              disabled={currentStep === 1 || isAiGenerating}
+              disabled={currentStep === 1 || isAiGenerating || (currentStep === 5 && showGeneratedPlan)}
             >
               Back
             </button>
             <button
               onClick={() => {
-                if (currentStep === 3) {
+                if (currentStep === 4) {
                   simulateAiGeneration();
-                } else {
-                  setCurrentStep(prev => Math.min(4, prev + 1));
+                  setCurrentStep(5);
+                } else if (currentStep < 5) {
+                  setCurrentStep(prev => prev + 1);
                 }
               }}
               className="btn btn-primary"
-              disabled={isAiGenerating}
+              disabled={isAiGenerating || showGeneratedPlan}
             >
-              {currentStep === 3 ? (
+              {currentStep === 4 ? (
                 isAiGenerating ? (
                   <>
                     <Loader className="animate-spin mr-2" size={20} />
@@ -829,6 +830,8 @@ export const PlannerPage: React.FC = () => {
                 ) : (
                   'Generate AI Plan'
                 )
+              ) : currentStep === 5 && showGeneratedPlan ? (
+                'Plan Complete'
               ) : (
                 <>
                   Next
