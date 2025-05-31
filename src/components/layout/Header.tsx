@@ -62,7 +62,7 @@ export const Header: React.FC<HeaderProps> = ({ onSidebarToggle }) => {
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
               <Compass size={28} className="text-primary-600" strokeWidth={2.5} />
-              <span className="text-xl font-bold text-primary-800">Wanderlust</span>
+              <span className="text-xl font-bold text-primary-800">Wanderer</span>
             </Link>
           </div>
 

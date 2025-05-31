@@ -98,7 +98,7 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center space-x-2 mb-6">
               <Compass size={28} className="text-primary-600" strokeWidth={2.5} />
-              <span className="text-xl font-bold text-primary-800">Wanderlust</span>
+              <span className="text-xl font-bold text-primary-800">Wanderer</span>
             </Link>
             <p className="text-gray-600 mb-6">
               Connecting travelers across Bangladesh through shared experiences and personalized adventures.
@@ -110,8 +110,8 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="text-primary-600" />
-                <a href="mailto:hello@wanderlust.com.bd" className="text-gray-700 hover:text-primary-600 transition-colors">
-                  hello@wanderlust.com.bd
+                <a href="mailto:hello@wanderer.com.bd" className="text-gray-700 hover:text-primary-600 transition-colors">
+                  hello@wanderer.com.bd
                 </a>
               </div>
               <div className="flex items-center space-x-3">
@@ -198,7 +198,7 @@ export const Footer: React.FC = () => {
                 </Link>
               </div>
               <div className="flex items-center text-gray-500">
-                <p>© {currentYear} Wanderlust. Made with</p>
+                <p>© {currentYear} Wanderer. Made with</p>
                 <Heart size={14} className="mx-1 text-coral-500" />
                 <p>for travelers</p>
               </div>

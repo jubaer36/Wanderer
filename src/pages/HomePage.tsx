@@ -69,13 +69,13 @@ export const HomePage: React.FC = () => {
       name: "Fatima Rahman",
       avatar: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg",
       role: "Travel Blogger",
-      content: "Wanderlust has transformed how I plan and share my travel experiences. The community is incredibly supportive!"
+      content: "Wanderer has transformed how I plan and share my travel experiences. The community is incredibly supportive!"
     },
     {
       name: "Aminul Islam",
       avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg",
       role: "Adventure Seeker",
-      content: "Finding travel companions was always challenging until I discovered Wanderlust. Now I never travel alone!"
+      content: "Finding travel companions was always challenging until I discovered Wanderer. Now I never travel alone!"
     },
     {
       name: "Rashida Begum",
@@ -176,7 +176,7 @@ export const HomePage: React.FC = () => {
       <section className="py-20">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Wanderlust</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Wanderer</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Everything you need to make your travel dreams come true
             </p>

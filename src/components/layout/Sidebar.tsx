@@ -167,7 +167,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
               </div>
               {isOpen && (
                 <div className="min-w-0 flex-1">
-                  <h3 className="font-semibold text-gray-900 truncate text-sm">John Doe</h3>
+                  <h3 className="font-semibold text-gray-900 truncate text-sm">Rafiqul Islam</h3>
                   <p className="text-xs text-gray-500 truncate">Adventure Seeker</p>
                 </div>
               )}
@@ -270,7 +270,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
             <div className="border-t border-gray-100 p-3 mt-auto">
               <div className="text-center">
                 <p className="text-xs text-gray-500">
-                  Wanderlust v2.0
+                  Wanderer v2.0
                 </p>
                 <p className="text-xs text-gray-400 mt-0.5">
                   Your travel companion
